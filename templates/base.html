@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <title>MOUNTAIN</title>
+    <style>
+        footer{
+        background-color:rgb(74, 102, 227);
+        color:black;
+        padding: 2px;
+        margin: 0;
+        text-align: center;
+        padding: 10px 10px;
+        overflow: hidden;
+}
+
+h1 {
+    color:black;
+    font-family: Patrick Hand, cursive;
+    padding: 10px 10px;
+    margin: 0;
+    background-color: rgb(66, 169, 237);
+}
+
+nav ul {
+    background-color: rgb(49, 158, 231);
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="banner" src="{%static banner%}" alt="">
+        <h1>The Earth Has Music For Those Who Listen</h1>
+        <nav>
+            <ul> 
+                {% for link,name in nav %}
+                <li>
+                    <a href="{{ link }}">{{ name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    <p>Keindahan pariwisata Indonesia memang sudah diakui oleh dunia. Awalnya,
+        informasi wisata hanya dapat disebar dengan penyampaian langsung dari mulut ke
+        mulut. Tetapi seiring perkembangan zaman dan teknologi, informasi dalam
+        masyarakat seperti sekarang ini informasi tidak hanya sekedar penyampaian pesan
+        kepada orang lain akan tetapi lebih kepada ajakan. Persuasi seakan menjadi bagian
+        yang tidak terpisahkan dari kehidupan manusia. </p>
+
+        <p>Wisata alam tak sekedar petualangan, namun juga wisata yang berkelanjutan,
+            berwawasan ekologi. Kepariwisataan alam kemudian berkembang dan bergeser
+            menjadi pola wisata minat khusus dan wisata ekologis. Kedua pola wisata ini
+            umumnya sangat mengandalkan kwalitas alam sehingga akan menjamin tetap
+            terpeliharanya keberadaan dan kelestarian alam yang merupakan objek dan daya tarik
+            wisata (Fandeli, 2002: 3). Pola wisata alam minat khusus
+            yang berkembang saat ini salah satunya adalah wisata gunung (mendaki gunung)
+            yang merupakan wisata alam yang memanfaatkan wilayah konservasi.</p>
+
+        <p>Web ini dibuat dengan tujuan untuk mengumpulkan informasi - informasi tentang pegunungan yang ada di Indonesia</p>
+        <p></p>
+        <p>Disusun Oleh : </p>
+        <p>Muhammad Faza Rizqy</p>
+        <P>Muhammad Restu Redi Subagya</P>
+        <P>Nur Avia Adenta Sari </P>
+    <footer>
+        <p>UAS UDB</p>
+    </footer>
+</body>
+</html>

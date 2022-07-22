@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <title>MOUNTAIN</title>
+    <style>
+        footer{
+        background-color:rgb(74, 102, 227);
+        color:black;
+        padding: 2px;
+        margin: 0;
+        text-align: center;
+        padding: 10px 10px;
+        overflow: hidden;
+}
+
+h1 {
+    color:black;
+    font-family: Patrick Hand, cursive;
+    padding: 10px 10px;
+    margin: 0;
+    background-color: rgb(66, 169, 237);
+}
+
+nav ul {
+    background-color: rgb(49, 158, 231);
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="banner" src="{%static banner%}" alt="">
+        <h1>The earth has music for those who listen</h1>
+        <nav>
+            <ul> 
+                {% for link,name in nav %}
+                <li>
+                    <a href="{{ link }}">{{ name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    <p>YA, INI BAGIAN ABOUT, TAPI TIDAK MUNCUL OPTION NYA DI WEB, BINGUNG, JADI SAYA KOSONGKAN SAJA SEKARANG</p>
+       
+    <footer>
+        <p>UAS UDB</p>
+    </footer>
+</body>
+</html>

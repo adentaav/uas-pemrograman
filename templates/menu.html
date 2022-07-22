@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <title>MOUNTAIN</title>
+
+    <style>
+        footer{
+        background-color:rgb(74, 102, 227);
+        color:black;
+        padding: 2px;
+        margin: 0;
+        text-align: center;
+        padding: 10px 10px;
+        overflow: hidden;
+}
+
+h1 {
+    color:black;
+    font-family: Patrick Hand, cursive;
+    padding: 10px 10px;
+    margin: 0;
+    background-color: rgb(66, 169, 237);
+}
+
+nav ul {
+    background-color: rgb(49, 158, 231);
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0; }
+    </style>
+
+</head>
+<body>
+    <header>
+        <img id="banner" src="{% static banner1 %}" alt="logo">
+        <h1>The Earth Has Music For Those Who Listen</h1>
+        <nav>
+            <ul> 
+                {% for link,name in nav1 %}
+                <li>
+                    <a href="{{ link }}">{{ name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    <p>Melihat keindahan sang surya terbit dari Pegunungan secara perlahan mungkin menjadi satu anugrah yang tak terhingga indahnya. Paduan warna kuning, oranye, hitam dan biru yang dihasilkan oleh fenomena alam ini sungguh menjadi pemandangan menarik yang tersaji bagi mata kita yang melihatnya</p>
+        <div class="content">
+            <ul>
+                <li>
+                    <div class="card">
+                        <img src="{% static gng1 %}" alt="">
+                        <h3>GUNUNG BROMO</h3>
+                        <p>Gunung Bromo atau dalam bahasa Tengger dieja "Brama", juga disebut Kaldera Tengger, adalah sebuah gunung berapi aktif di Jawa Timur, Indonesia. Gunung ini memiliki ketinggian 2.329 meter di atas permukaan laut dan berada dalam empat wilayah kabupaten, yakni Kabupaten Probolinggo, Kabupaten Pasuruan, Kabupaten Lumajang, dan Kabupaten Malang. Gunung Bromo terkenal sebagai objek wisata utama di Jawa Timur. Sebagai sebuah objek wisata, Bromo menjadi menarik karena statusnya sebagai gunung berapi yang masih aktif. Gunung Bromo termasuk dalam kawasan Taman Nasional Bromo Tengger Semeru</p>
+
+                            <p>Nama Bromo berasal dari nama dewa utama dalam agama Hindu, Brahma</p>
+                            
+                            <p>Bentuk tubuh Gunung Bromo bertautan antara lembah dan ngarai dengan kaldera atau lautan pasir seluas sekitar 10 kilometer persegi. Ia mempunyai sebuah kawah dengan garis tengah ± 800 meter (utara-selatan) dan ± 600 meter (timur-barat). Sedangkan daerah bahayanya berupa lingkaran dengan jari-jari 4 km dari pusat kawah Bromo</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="{% static gng2 %}" alt="">
+                        <h3>GUNUNG SINDORO</h3>
+                        <p> Gunung Sindoro, biasa disebut Sindara, atau juga Sundoro (Ketinggian puncak 3.136 mdpl) (bahasa Jawa: ꦒꦸꦤꦸꦁꦱꦶꦤ꧀ꦢꦫ, translit. Gunung Sindara) merupakan sebuah gunung volkano aktif yang terletak di Jawa Tengah, Indonesia, dengan Temanggung sebagai kota terdekat. Gunung Sindoro terletak berdampingan dengan Gunung Sumbing. Gunung sindara dapat terlihat jelas dari puncak sikunir dieng</p>
+
+                            <p>Kawah yang disertai jurang dapat ditemukan di sisi barat laut ke selatan gunung, dan yang terbesar disebut Kembang. Sebuah kubah lava kecil menempati puncak gunung berapi. Sejarah letusan Gunung Sindara yang telah terjadi sebagian besar berjenis ringan sampai sedang (letusan freatik)</p>
+                            
+                            <p>Hutan di kawasan Gunung Sundoro berjenis Hutan Dipterokarp Bukit, Hutan Dipterokarp Atas, hutan Montane, dan Hutan Ericaceous atau hutan gunung</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="{% static gng3 %}" alt="">
+                        <h3>GUNUNG PARAHU</h3>
+                        <p>Gunung Parahu (bahasa Jawa: ꦒꦸꦤꦸꦁꦥꦫꦲꦸ, translit. gunung parahu, har. 'gunung perahu') adalah salah satu gunung di Dataran Tinggi Dieng, Jawa Tengah, Indonesia. Gunung Parahu memiliki ketinggian 2.590 mdpl dan terletak pada koordinat 7°11′13″S 109°55′22″E. Gunung ini merupakan tapal batas antara empat kabupaten yaitu Kabupaten Batang, Kabupaten Kendal, Kabupaten Temanggung dan Kabupaten Wonosobo.</p>
+
+                            <p>Puncak dari gunung Parahu merupakan padang rumput luas yang memanjang dari barat ke timur. Bukit-bukit dan sabana dengan sedikit pepohonan dapat dijumpai pada puncaknya. Gunung ini menjadi salah satu tujuan pendakian utama di Dataran Tinggi Dieng sebagai salah satu spot sunrise favorit bagi wisatawan</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="{% static gng4 %}" alt="">
+                        <h3>GUNUNG RINJANI</h3>
+                        <p>Gunung Rinjani adalah gunung yang berlokasi di Pulau Lombok, Nusa Tenggara Barat. Gunung yang merupakan gunung berapi kedua tertinggi di Indonesia dengan ketinggian 3.726 mdpl serta terletak pada lintang 8º25' LS dan 116º28' BT ini merupakan gunung favorit bagi pendaki Indonesia karena keindahan pemandangannya. Gunung ini merupakan bagian dari Taman Nasional Gunung Rinjani yang memiliki luas sekitar 41.330 ha dan ini akan diusulkan penambahannya sehingga menjadi 76.000 ha ke arah barat dan timur.</p>
+
+                            <p> Secara administratif gunung ini berada dalam wilayah tiga kabupaten: Lombok Timur, Lombok Tengah, dan Lombok Utara.</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    <footer>
+        <p>UAS UDB</p>
+    </footer>
+</body>
+</html>
+
